@@ -22,85 +22,64 @@ body {
   line-height: 1.6;
 }
 
-nav {
-  background-color: var(--burgundy);
-  padding: 1em;
+/* ========== NAVBAR ========== */
+
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  background-color: #cbc0b2;
+  padding: 10px 20px;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: var(--transition-fast);
 }
 
 .logo {
+  font-size: 1.5rem;
+  color: #550b14;
   font-weight: bold;
-  font-size: 1.5em;
 }
 
 .nav-links {
+  display: flex;
   list-style: none;
-  display: flex;
-  gap: 1.5em;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: var(--transition-fast);
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  text-decoration: underline;
-  color: var(--grayish-brown);
-}
-
-.hero {
-  text-align: center;
-  padding: 5em 2em;
-  background-color: var(--grayish-brown);
-  color: white;
-  transition: var(--transition-fast);
-}
-
-.hero-content {
-  display: flex;
+  gap: 15px;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-}
-
-.profile-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid var(--brown);
-  transition: var(--transition-fast);
-}
-
-.hero h1 {
-  font-size: 3em;
+  padding: 0;
   margin: 0;
 }
 
-.hero .cta {
-  margin-top: 1.5em;
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  background-color: var(--burgundy);
-  color: white;
+.nav-links li a {
   text-decoration: none;
-  border-radius: 8px;
-  transition: var(--transition-fast);
+  color: #550b14;
+  padding: 8px 12px;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 
-.hero .cta:hover {
-  background-color: var(--brown);
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #7e6961;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 section {
