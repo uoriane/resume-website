@@ -22,7 +22,6 @@ body {
   line-height: 1.6;
 }
 
-/* ========== NAVBAR ========== */
 /* ====== NAVIGATION BAR ====== */
 #navbar {
   display: flex;
@@ -80,6 +79,15 @@ body {
   }
 }
 
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #7e6961;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
 
 
   
