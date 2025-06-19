@@ -494,3 +494,62 @@ tbody tr:hover td {
   box-shadow: 0 8px 16px rgba(191, 141, 147, 0.1);
   color: #550b14;
 }
+
+/* General responsive image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix overflow on body and containers */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevents sideways scrolling */
+}
+
+/* Responsive text */
+h1, h2, p {
+  word-wrap: break-word;
+}
+
+/* Make hero section responsive */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* For buttons */
+.cta {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #550b14;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  nav ul.nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
